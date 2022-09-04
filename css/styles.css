@@ -1,0 +1,241 @@
+/* css reset */
+*{
+  margin: 0;
+  padding:0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* css variable */
+/* :root{
+  --navbar-height: 59px;
+} */
+
+/* navigation bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+#navbar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+/* navigation-bar:- logo and image */
+#logo{
+  margin: 10px 34px;
+}
+
+#logo-img{
+  margin: 3px 6px;
+  height: 68px;
+}
+/* navigation bar:- styling list */
+#nav-ul{
+  display: flex;
+  font-family: 'Baloo 2', cursive;
+}
+
+
+.item{
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+a{
+  color: #ffffff;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #000000;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+/* home section */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 439px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before{
+  content: "";
+  position: absolute;
+  background:
+  url(../bg4.jpg) no-repeat center center/cover;
+  height: 70%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1{
+  color: #fff;
+  text-align: center;
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#home p{
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* services section */
+#services{
+  margin: 32px;
+  display: flex;
+  /* flex-direction: column; */
+}
+#services .box{
+  border:2px solid #964b00;
+  padding: 34px;
+  margin: 35px 6px;
+  border-radius: 28px;
+}
+
+#services .box img{
+  height: 156px;
+  margin:auto;
+  display: block;
+}
+
+#services .box p{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* clients */
+
+#client-section{
+  position: relative;
+}
+
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url(../bg2.jpg);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item{
+  padding: 34px;
+}
+
+
+#clients img{
+  height: 125px;
+}
+
+/* contact us */
+
+#contact{
+  position: relative;
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(../bg1.jpg) no-repeat center center/cover;
+}
+
+
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:34px ;
+}
+
+#contact-box input, #contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box form{
+  width: 40%;
+
+}
+
+#contact-box flabel{
+  font-size: 1.3rem;;
+  font-family: 'Baloo 2', cursive;
+
+}
+
+
+
+footer{
+  background-color: #000000;
+  color: #fff;
+  padding: 9px 20px;
+}
+
+
+/* utility classes */
+.h-primary{
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.btn{
+  padding: 6px 20px;
+  border: 2px solid #fff;
+  background-color: #964b00;
+  color: #fff;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.h-secondary{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.center{
+  text-align: center;
+}
